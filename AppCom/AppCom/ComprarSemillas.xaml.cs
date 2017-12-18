@@ -28,8 +28,9 @@ namespace AppCom
             cargarJSONasincrono();
         }
 
-
-        private async void cargarJSONasincrono()
+   
+            
+    private async void cargarJSONasincrono()
         {
             try
             {
@@ -75,7 +76,6 @@ namespace AppCom
                     loadingItems2.IsVisible = false;
                     ListView2.ItemsSource = arregloProductos;
                     ListView2.IsPullToRefreshEnabled = true;
-
 
 
                 }

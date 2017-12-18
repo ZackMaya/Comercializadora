@@ -1,3 +1,11 @@
+C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\obj\Debug\AppCom.csproj.App.config
+C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\obj\Debug\AppCom.MainPage.xaml.g.cs
+C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\obj\Debug\AppCom.App.xaml.g.cs
+C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\obj\Debug\AppCom.ComprarSemillas.xaml.g.cs
+C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\obj\Debug\AppCom.ComprarGomitass.xaml.g.cs
+C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\obj\Debug\AppCom.ComprarPaletas.xaml.g.cs
+C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\obj\Debug\AppCom.CompraChocolates.xaml.g.cs
+C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\obj\Debug\AppCom.UserPage.xaml.g.cs
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\bin\Debug\AppCom.dll.config
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\bin\Debug\AppCom.dll
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\bin\Debug\AppCom.pdb
@@ -19,15 +27,7 @@ C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\bin\De
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\bin\Debug\Xamarin.Forms.Platform.pdb
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\bin\Debug\Xamarin.Forms.Xaml.xml
-C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\obj\Debug\AppCom.csproj.App.config
-C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\obj\Debug\AppCom.csprojResolveAssemblyReference.cache
-C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\obj\Debug\AppCom.MainPage.xaml.g.cs
-C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\obj\Debug\AppCom.App.xaml.g.cs
-C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\obj\Debug\AppCom.ComprarSemillas.xaml.g.cs
-C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\obj\Debug\AppCom.ComprarGomitass.xaml.g.cs
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\obj\Debug\AppCom.dll
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\obj\Debug\AppCom.pdb
-C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\obj\Debug\AppCom.ComprarPaletas.xaml.g.cs
-C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\obj\Debug\AppCom.CompraChocolates.xaml.g.cs
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\obj\Debug\AppCom.dll.mdb
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\bin\Debug\AppCom.dll.mdb

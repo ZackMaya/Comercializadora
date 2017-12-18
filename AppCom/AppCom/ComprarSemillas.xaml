@@ -12,7 +12,10 @@
             <ListView x:Name="ListView2" RowHeight="200">
                 <ListView.ItemTemplate>
                     <DataTemplate>
+                        
                         <ViewCell>
+
+
                             <StackLayout Orientation="Vertical">
                                 <Label Text="{Binding nombre}" TextColor="#000" FontSize="20" LineBreakMode="TailTruncation" FontAttributes="Bold" />
                                 <Label Text="{Binding descripcion}" TextColor="#000" LineBreakMode="HeadTruncation" HorizontalOptions="EndAndExpand"/>
