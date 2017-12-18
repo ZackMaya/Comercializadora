@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCom.ComprarSemillas"
+             Title="ComprarSemillas">
+    <ContentPage.Content>
+
+
+
+        <StackLayout BackgroundColor="White" Padding="10,10,10,30">
+            <ActivityIndicator x:Name="loadingItems2" IsRunning="true" IsVisible="true" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1" Color="Gray" />
+            <ListView x:Name="ListView2" RowHeight="200">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="{Binding nombre}" TextColor="#000" FontSize="20" LineBreakMode="TailTruncation" FontAttributes="Bold" />
+                                <Label Text="{Binding descripcion}" TextColor="#000" LineBreakMode="HeadTruncation" HorizontalOptions="EndAndExpand"/>
+                                <Image Aspect="AspectFill" HorizontalOptions="FillAndExpand" Source="{Binding imagen}" WidthRequest="100" HeightRequest="150"/>
+                                <Label Text="{Binding piezas}" TextColor="#000" FontSize="14" LineBreakMode="TailTruncation" FontAttributes="Bold" />
+
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
