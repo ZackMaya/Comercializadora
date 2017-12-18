@@ -28,7 +28,39 @@ namespace AppCom
             getComercializadora2();
             // BindingContext = new ContentPageViewModel();
         }
-         private async void getComercializadora2()
+
+        private void BtnBuy_Clicked(object sender, EventArgs e)
+        {
+            var id = boxId.Text;
+            var cantidad = boxCantidad.Text;
+            //Verificamos que no sean vacios los campos.
+            if (!string.IsNullOrEmpty(cantidad) && !string.IsNullOrEmpty(id))
+            {
+                var pc = Convert.ToInt32(cantidad);
+                if (pc > 0)
+                {
+                    var i = Convert.ToInt32(boxId.Text) - 1;
+                    if (pc <= Convert.ToInt32(arregloDatos[i]["piezas"].ToString()))
+                    {
+                        //realizar el put
+                    }
+                    else
+                    {
+                        DisplayAlert("Error, solo de dispone de ", arregloDatos[i]["piezas"].ToString(), "Aceptar");
+                    }
+                }
+                else
+                {
+                    DisplayAlert("Error, se espera un numero mayor a 0.", cantidad, "Aceptar");
+                }
+            }
+            else
+            {
+                DisplayAlert("Error, campo vacio.", null, "Aceptar");
+            }
+        }
+
+        private async void getComercializadora2()
         {
             try
             {

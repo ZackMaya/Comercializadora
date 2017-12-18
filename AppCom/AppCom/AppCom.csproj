@@ -35,37 +35,37 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Comercializadora.Vista\App.xaml.cs">
+    <Compile Include="Comercializadora.ModeloVista\App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Comercializadora.ModeloVista\CompraChocolates.xaml.cs">
+    <Compile Include="Comercializadora.Vistas\CompraChocolates.xaml.cs">
       <DependentUpon>CompraChocolates.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Comercializadora.ModeloVista\ComprarGomitass.xaml.cs">
+    <Compile Include="Comercializadora.Vistas\ComprarGomitass.xaml.cs">
       <DependentUpon>ComprarGomitass.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Comercializadora.ModeloVista\ComprarPaletas.xaml.cs">
+    <Compile Include="Comercializadora.Vistas\ComprarPaletas.xaml.cs">
       <DependentUpon>ComprarPaletas.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Comercializadora.ModeloVista\ComprarSemillas.xaml.cs">
+    <Compile Include="Comercializadora.Vistas\ComprarSemillas.xaml.cs">
       <DependentUpon>ComprarSemillas.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Comercializadora.Vista\MainPage.xaml.cs">
+    <Compile Include="Comercializadora.ModeloVista\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Comercializadora.Modelo\Producto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Comercializadora.Modelo\UserModel.cs" />
-    <Compile Include="Comercializadora.Vista\UserPage.xaml.cs">
+    <Compile Include="Comercializadora.ModeloVista\UserPage.xaml.cs">
       <DependentUpon>UserPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Comercializadora.Vista\MainPage.xaml">
+    <EmbeddedResource Include="Comercializadora.ModeloVista\MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Comercializadora.Vista\App.xaml">
+    <EmbeddedResource Include="Comercializadora.ModeloVista\App.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -107,31 +107,31 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Comercializadora.ModeloVista\ComprarSemillas.xaml">
+    <EmbeddedResource Include="Comercializadora.Vistas\ComprarSemillas.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Comercializadora.ModeloVista\ComprarGomitass.xaml">
+    <EmbeddedResource Include="Comercializadora.Vistas\ComprarGomitass.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Comercializadora.ModeloVista\ComprarPaletas.xaml">
+    <EmbeddedResource Include="Comercializadora.Vistas\ComprarPaletas.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Comercializadora.ModeloVista\CompraChocolates.xaml">
+    <EmbeddedResource Include="Comercializadora.Vistas\CompraChocolates.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Comercializadora.Vista\UserPage.xaml">
+    <EmbeddedResource Include="Comercializadora.ModeloVista\UserPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

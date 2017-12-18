@@ -15,6 +15,10 @@
             </StackLayout>
             <Image Source="semillas.jpg" WidthRequest="500" HeightRequest="150"></Image>
 
+            <Entry x:Name="boxId" Placeholder="Ingresa el id del producto a comprar" HorizontalOptions="StartAndExpand"/>
+            <Entry x:Name="boxCantidad" Placeholder="Ingresa la cantidad de piezas a comprar" HorizontalOptions="StartAndExpand"/>
+            <Button Text="Comprar" x:Name="btnBuy" Clicked="BtnBuy_Clicked" HorizontalOptions="StartAndExpand"/>
+
 
             <ActivityIndicator x:Name="loadingItems2" IsRunning="true" IsVisible="true" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1" Color="Gray" />
             <ListView x:Name="ListView2" RowHeight="200">
@@ -30,9 +34,7 @@
                                 <Label Text="{Binding piezas}" TextColor="#000" FontSize="18" LineBreakMode="TailTruncation" FontAttributes="Bold" />
 
                                 <Image Aspect="AspectFill" HorizontalOptions="FillAndExpand" Source="{Binding url}" WidthRequest="200" HeightRequest="250"/>
-                                <Entry Placeholder="Ingresa la cantidad de piezas a comprar" HorizontalOptions="StartAndExpand"/>
-                                <Button Text="Comprar" HorizontalOptions="StartAndExpand"/>
-                            </StackLayout>
+                       </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>

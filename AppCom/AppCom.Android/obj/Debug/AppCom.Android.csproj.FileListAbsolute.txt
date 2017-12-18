@@ -1,3 +1,5 @@
+C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Android\obj\Debug\AppCom.Android.dll
+C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Android\obj\Debug\AppCom.Android.pdb
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Android\bin\Debug\AppCom.Android.dll.config
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Android\bin\Debug\AppCom.Android.dll
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Android\bin\Debug\AppCom.Android.pdb
@@ -19,6 +21,7 @@ C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Androi
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Android\bin\Debug\Xamarin.Forms.Xaml.dll
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Android\bin\Debug\Newtonsoft.Json.dll
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Android\bin\Debug\AppCom.pdb
+C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Android\bin\Debug\AppCom.dll.mdb
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Android\bin\Debug\FormsViewGroup.pdb
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Android\bin\Debug\FormsViewGroup.dll.mdb
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Android\bin\Debug\Xamarin.Forms.Core.pdb
@@ -31,8 +34,6 @@ C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Androi
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Android\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Android\bin\Debug\Newtonsoft.Json.xml
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Android\obj\Debug\AppCom.Android.csprojResolveAssemblyReference.cache
-C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Android\obj\Debug\AppCom.Android.dll
-C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Android\obj\Debug\AppCom.Android.pdb
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Android\obj\Debug\android\bin\AppCom.Android.apk
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Android\obj\Debug\res\drawable-hdpi\icon.png
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Android\obj\Debug\res\drawable-xhdpi\icon.png
@@ -51,7 +52,6 @@ C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Androi
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Android\obj\Debug\R.cs.flag
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Android\obj\Debug\uploadflags.txt
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Android\bin\Debug\AppCom.Android.dll.mdb
-C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Android\bin\Debug\AppCom.dll.mdb
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Android\bin\Debug\Java.Interop.dll.mdb
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Android\bin\Debug\Microsoft.CSharp.dll.mdb
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom.Android\bin\Debug\Mono.Android.dll.mdb

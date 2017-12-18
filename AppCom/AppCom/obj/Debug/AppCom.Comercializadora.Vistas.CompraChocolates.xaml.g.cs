@@ -17,6 +17,15 @@ namespace AppCom {
     public partial class CompraChocolates : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Entry boxId;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Entry boxCantidad;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button btnBuy;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.ActivityIndicator loadingItems4;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -25,6 +34,9 @@ namespace AppCom {
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(CompraChocolates));
+            boxId = this.FindByName<global::Xamarin.Forms.Entry>("boxId");
+            boxCantidad = this.FindByName<global::Xamarin.Forms.Entry>("boxCantidad");
+            btnBuy = this.FindByName<global::Xamarin.Forms.Button>("btnBuy");
             loadingItems4 = this.FindByName<global::Xamarin.Forms.ActivityIndicator>("loadingItems4");
             ListView4 = this.FindByName<global::Xamarin.Forms.ListView>("ListView4");
         }
