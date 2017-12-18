@@ -34,7 +34,6 @@ namespace AppCom
             {
                 var cliente = new HttpClient();
                 //await this.DisplayAlert("ClienteHTTP", "Si llega a la peticion", "Acepar");
-                //cliente.DefaultRequestHeaders.Add("id","descripcion");
                 cliente.BaseAddress = new Uri("https://api-paletas.herokuapp.com/api/");
                 // await this.DisplayAlert("URL", "Si llega a la URI", "Aceptar");
                 String url = string.Format("getproductos");
@@ -43,7 +42,7 @@ namespace AppCom
                 if (resp.IsSuccessStatusCode)
                 {
                     var respStr = await resp.Content.ReadAsStringAsync();
-                    await this.DisplayAlert("URL", respStr, "Aceptar");
+                    //await this.DisplayAlert("URL", respStr, "Aceptar");
                     //hasta aqui la peticion es xida
                     var l = JsonConvert.DeserializeObject<Producto>(respStr);
                  
