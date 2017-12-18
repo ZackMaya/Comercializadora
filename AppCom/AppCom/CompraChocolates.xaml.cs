@@ -17,25 +17,23 @@ namespace AppCom
 {
 
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ComprarPaletas : ContentPage
+    public partial class CompraChocolates : ContentPage
     {
-
         JArray arregloDatos = new JArray();
-        public ComprarPaletas()
+        public CompraChocolates()
         {
             InitializeComponent();
-            cargarJSONasincrono();
+            cargarJSONasincrono2();
+            // BindingContext = new ContentPageViewModel();
         }
-
-
-        private async void cargarJSONasincrono()
+        private async void cargarJSONasincrono2()
         {
             try
             {
                 var cliente = new HttpClient();
                 //await this.DisplayAlert("ClienteHTTP", "Si llega a la peticion", "Acepar");
                 //cliente.DefaultRequestHeaders.Add("id","descripcion");
-                cliente.BaseAddress = new Uri("https://api-paletas.herokuapp.com/api/");
+                cliente.BaseAddress = new Uri("https://api-chocolates-xml.herokuapp.com/api/");
                 // await this.DisplayAlert("URL", "Si llega a la URI", "Aceptar");
                 String url = string.Format("getproductos");
                 var resp = await cliente.GetAsync(url);
@@ -52,7 +50,6 @@ namespace AppCom
                      await this.DisplayAlert("Arreglo", "despues de arreglo", "Acepar");
                      //lista.ItemsSource = arregloDatos;*/
 
-
                     JObject valores = JObject.Parse(respStr);
                     arregloDatos = (JArray)valores["productos"];
 
@@ -61,35 +58,40 @@ namespace AppCom
                     for (var i = 0; i < arregloDatos.Count; i++)
                     {
                         Producto tmp = new Producto()
-                        {
 
+                        {
                             nombre = arregloDatos[i]["nombre"].ToString(),
-                            descripcion = arregloDatos[i]["descripcion"].ToString(),
-                            cantidad = Convert.ToInt32(arregloDatos[i]["cantidad"].ToString()),
-                            foto = arregloDatos[i]["foto"].ToString()
+                            imagen = arregloDatos[i]["imagen"].ToString(),
+                            piezas = Convert.ToInt32(arregloDatos[i]["piezas"].ToString()),
+                            descripcion = arregloDatos[i]["descripcion"].ToString()
+
                         };
                         arregloProductos.Add(tmp);
+
                     }
-                    loadingItems3.IsVisible = false;
-                    ListView3.ItemsSource = arregloProductos;
-                    ListView3.IsPullToRefreshEnabled = true;
+                    loadingItems4.IsVisible = false;
+                    ListView4.ItemsSource = arregloProductos;
+                    ListView4.IsPullToRefreshEnabled = true;
 
 
 
+                }
+                else
+                {
+                    await this.DisplayAlert("No hay API", "No hay nada que mostrar aqui", "continuar");
                 }
             }
             catch (Exception ex)
             {
                 await this.DisplayAlert("Tienes una excepción en: ", ex.Message, "Aceptar");
             }
-
         }
     }
 
-        class ComprarPaletasViewModel : INotifyPropertyChanged
+    class CompraChocolatesViewModel : INotifyPropertyChanged
     {
 
-        public ComprarPaletasViewModel()
+        public CompraChocolatesViewModel()
         {
             IncreaseCountCommand = new Command(IncreaseCount);
         }

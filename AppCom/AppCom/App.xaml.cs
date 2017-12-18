@@ -13,9 +13,15 @@ namespace AppCom
         {
             InitializeComponent();
 
+            MainPage = new AppCom.MainPage()
+            {
+                Title = "Hola mundo en xamarin Forms"
+            };
             // MainPage = new NavigationPage(new AppCom.ComprarSemillas());
-            MainPage = new NavigationPage(new AppCom.ComprarGomitass());
-           // MainPage = new NavigationPage(new AppCom.ComprarPaletas());
+            // MainPage = new NavigationPage(new AppCom.ComprarGomitass());
+            // MainPage = new NavigationPage(new AppCom.ComprarPaletas());
+            // MainPage = new NavigationPage(new AppCom.CompraChocolates());
+
         }
 
         protected override void OnStart()

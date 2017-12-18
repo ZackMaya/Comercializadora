@@ -17,8 +17,24 @@ namespace AppCom {
     public partial class MainPage : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button btnVerChocolates;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button btnVerGomitas;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button btnVerPaletas;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button btnVerSemillas;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(MainPage));
+            btnVerChocolates = this.FindByName<global::Xamarin.Forms.Button>("btnVerChocolates");
+            btnVerGomitas = this.FindByName<global::Xamarin.Forms.Button>("btnVerGomitas");
+            btnVerPaletas = this.FindByName<global::Xamarin.Forms.Button>("btnVerPaletas");
+            btnVerSemillas = this.FindByName<global::Xamarin.Forms.Button>("btnVerSemillas");
         }
     }
 }

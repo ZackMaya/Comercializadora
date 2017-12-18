@@ -4,5 +4,25 @@
              xmlns:local="clr-namespace:AppCom"
              x:Class="AppCom.MainPage">
 
-   
+
+    <ContentPage.Content >
+        <StackLayout Padding="10,12">
+            <StackLayout Orientation="Horizontal">
+                <Image Source="icon.png" WidthRequest="30" HeightRequest="30"></Image>
+                <Label Text="Provedor de dulces." FontSize="30"/>
+            </StackLayout>
+            <Image Source="dulces_2.jpg" WidthRequest="300" HeightRequest="300"></Image>
+
+            <!-- Entry x:Name="boxName" Placeholder="Ingresa tu nombre"/ -->
+            <!-- Button Text="Guardar" x:Name="btnSave" Clicked="BtnSave_Clicked"/ -->
+
+            <Button Text="Catalogo de Chocolates" x:Name="btnVerChocolates" Clicked="BtnVerChocolates_Clicked"/>
+            <Button Text="Catalogo de Gomitas" x:Name="btnVerGomitas" Clicked="BtnVerGomitas_Clicked"/>
+            <Button Text="Catalogo de Paletas" x:Name="btnVerPaletas" Clicked="BtnVerPaletas_Clicked"/>
+            <Button Text="Catalogo de Semillas" x:Name="btnVerSemillas" Clicked="BtnVerSemillas_Clicked"/>
+
+            <!-- Button Text="Haz click!!" x:Name="btnSumar"/ -->
+        </StackLayout>
+    </ContentPage.Content>
+
 </ContentPage>

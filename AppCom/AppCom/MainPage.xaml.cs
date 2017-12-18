@@ -19,6 +19,22 @@ namespace AppCom
             InitializeComponent();
          
         }
+        private void BtnVerChocolates_Clicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushModalAsync(new CompraChocolates());
+        }
+        private void BtnVerGomitas_Clicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushModalAsync(new ComprarGomitass());
+        }
+        private void BtnVerPaletas_Clicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushModalAsync(new ComprarPaletas());
+        }
+        private void BtnVerSemillas_Clicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushModalAsync(new ComprarSemillas());
+        }
 
     }
 }

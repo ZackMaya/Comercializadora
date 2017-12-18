@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCom.CompraChocolates"
+             Title="Compra Chocolates">
+    <ContentPage.Content>
+
+
+
+        <StackLayout BackgroundColor="White" Padding="10,10,10,30">
+            <ActivityIndicator x:Name="loadingItems4" IsRunning="true" IsVisible="true" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1" Color="Gray" />
+            <ListView x:Name="ListView4" RowHeight="200">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="{Binding nombre}" TextColor="#000" FontSize="20" LineBreakMode="TailTruncation" FontAttributes="Bold" />
+                                <Label Text="{Binding descripcion}" TextColor="#000" LineBreakMode="HeadTruncation" HorizontalOptions="EndAndExpand"/>
+                                <Label Text="{Binding cantidad}" TextColor="#000" FontSize="18" LineBreakMode="TailTruncation" FontAttributes="Bold" />
+
+                                <Image Aspect="AspectFill" HorizontalOptions="FillAndExpand" Source="{Binding imagen}" WidthRequest="100" HeightRequest="200"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

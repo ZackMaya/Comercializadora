@@ -33,7 +33,7 @@ namespace AppCom
             try
             {
                 var cliente = new HttpClient();
-                //await this.DisplayAlert("ClienteHTTP", "Si llega a la peticion", "Acepar");
+                await this.DisplayAlert("ClienteHTTP", "Si llega a la peticion", "Acepar");
                 //cliente.DefaultRequestHeaders.Add("id","descripcion");
                 cliente.BaseAddress = new Uri("http://gomitas.herokuapp.com/api/");
                 // await this.DisplayAlert("URL", "Si llega a la URI", "Aceptar");
