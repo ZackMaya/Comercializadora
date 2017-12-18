@@ -29,8 +29,9 @@
                                 <Label Text="{Binding descripcion}" TextColor="#000" LineBreakMode="HeadTruncation" HorizontalOptions="EndAndExpand"/>
                                 <Label Text="{Binding piezas}" TextColor="#000" FontSize="18" LineBreakMode="TailTruncation" FontAttributes="Bold" />
 
-                                <Image Aspect="AspectFill" HorizontalOptions="FillAndExpand" Source="{Binding url}" WidthRequest="100" HeightRequest="150"/>
-
+                                <Image Aspect="AspectFill" HorizontalOptions="FillAndExpand" Source="{Binding url}" WidthRequest="200" HeightRequest="250"/>
+                                <Entry Placeholder="Ingresa la cantidad de piezas a comprar" HorizontalOptions="StartAndExpand"/>
+                                <Button Text="Comprar" HorizontalOptions="StartAndExpand"/>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

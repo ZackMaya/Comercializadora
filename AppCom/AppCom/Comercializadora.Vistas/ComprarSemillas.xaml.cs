@@ -25,12 +25,12 @@ namespace AppCom
         {
             InitializeComponent();
             //BindingContext = new ContentPageViewModel();
-            cargarJSONasincrono();
+            getComercializadora();
         }
 
-   
-           
-    private async void cargarJSONasincrono()
+
+
+        private async void getComercializadora()
         {
             try
             {
@@ -47,7 +47,7 @@ namespace AppCom
                     //await this.DisplayAlert("URL", respStr, "Aceptar");
                     //hasta aqui la peticion es xida
                     var l = JsonConvert.DeserializeObject<Producto>(respStr);
-                   
+
 
 
                     JObject valores = JObject.Parse(respStr);
@@ -80,6 +80,29 @@ namespace AppCom
 
         }
     }
+
+     /*   public async Task putComercializadora(Producto produto)
+        {
+            try
+            {
+                var cliente = new HttpClient();
+                //await this.DisplayAlert("ClienteHTTP", "Si llega a la peticion", "Acepar");
+                cliente.BaseAddress = new Uri("https://semillas-luis.herokuapp.com/api/");
+                // await this.DisplayAlert("URL", "Si llega a la URI", "Aceptar");
+                String url = string.Format("actualizarProducto");
+                var resp = await cliente.PutAsync(url);
+
+                if (resp.IsSuccessStatusCode)
+            {
+                  
+                }
+
+        }
+            catch (Exception ex)
+            {
+                await this.DisplayAlert("Tienes una excepción en: ", ex.Message, "Aceptar");
+            }
+        }*/
 
     class ComprarSemillasViewModel : INotifyPropertyChanged
     {

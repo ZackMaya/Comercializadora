@@ -25,10 +25,10 @@ namespace AppCom
         public ComprarGomitass()
         {
             InitializeComponent();
-            cargarJSONasincrono2();
+            getComercializadora2();
             // BindingContext = new ContentPageViewModel();
         }
-         private async void cargarJSONasincrono2()
+         private async void getComercializadora2()
         {
             try
             {

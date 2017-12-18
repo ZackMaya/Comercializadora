@@ -1,32 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppCom.ComprarGomitass"
-             Title="Compra Gomitass">
+             x:Class="AppCom.CompraChocolates"
+             Title="Compra Chocolates">
     <ContentPage.Content>
 
 
 
         <StackLayout BackgroundColor="White" Padding="10,10,10,30">
+
+
             <StackLayout Orientation="Horizontal">
                 <Image Source="icon.png" WidthRequest="30" HeightRequest="30"></Image>
-                <Label Text="Catalogo de Gomitas" FontSize="30"/>
-             </StackLayout>
-                <Image Source="gomitas.jpg" WidthRequest="500" HeightRequest="150"></Image>
+                <Label Text="Catalogo de Chocolates" FontSize="30"/>
+            </StackLayout>
+            <Image Source="chocolates.jpg" WidthRequest="500" HeightRequest="150"></Image>
 
 
-        <ActivityIndicator x:Name="loadingItems1" IsRunning="true" IsVisible="true" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1" Color="Gray" />
-            <ListView x:Name="ListView1" RowHeight="200">
+            <ActivityIndicator x:Name="loadingItems4" IsRunning="true" IsVisible="true" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1" Color="Gray" />
+            <ListView x:Name="ListView4" RowHeight="200">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Orientation="Vertical">
                                 <Label Text="{Binding nombre}" TextColor="#000" FontSize="20" LineBreakMode="TailTruncation" FontAttributes="Bold" />
-                                <Label Text="{Binding piezas}" TextColor="#000" FontSize="18" LineBreakMode="TailTruncation" FontAttributes="Bold" />
                                 <Label Text="{Binding descripcion}" TextColor="#000" LineBreakMode="HeadTruncation" HorizontalOptions="EndAndExpand"/>
+                                <Label Text="{Binding cantidad}" TextColor="#000" FontSize="18" LineBreakMode="TailTruncation" FontAttributes="Bold" />
 
                                 <Image Aspect="AspectFill" HorizontalOptions="FillAndExpand" Source="{Binding imagen}" WidthRequest="100" HeightRequest="200"/>
-                               </StackLayout>
+                                <Entry Placeholder="Ingresa la cantidad de piezas a comprar" HorizontalOptions="StartAndExpand"/>
+                                <Button Text="Comprar" HorizontalOptions="StartAndExpand"/>
+                            </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>

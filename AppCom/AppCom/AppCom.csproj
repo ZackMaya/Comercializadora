@@ -35,37 +35,37 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="App.xaml.cs">
+    <Compile Include="Comercializadora.Vista\App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CompraChocolates.xaml.cs">
+    <Compile Include="Comercializadora.ModeloVista\CompraChocolates.xaml.cs">
       <DependentUpon>CompraChocolates.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ComprarGomitass.xaml.cs">
+    <Compile Include="Comercializadora.ModeloVista\ComprarGomitass.xaml.cs">
       <DependentUpon>ComprarGomitass.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ComprarPaletas.xaml.cs">
+    <Compile Include="Comercializadora.ModeloVista\ComprarPaletas.xaml.cs">
       <DependentUpon>ComprarPaletas.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ComprarSemillas.xaml.cs">
+    <Compile Include="Comercializadora.ModeloVista\ComprarSemillas.xaml.cs">
       <DependentUpon>ComprarSemillas.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainPage.xaml.cs">
+    <Compile Include="Comercializadora.Vista\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Producto.cs" />
+    <Compile Include="Comercializadora.Modelo\Producto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserModel.cs" />
-    <Compile Include="UserPage.xaml.cs">
+    <Compile Include="Comercializadora.Modelo\UserModel.cs" />
+    <Compile Include="Comercializadora.Vista\UserPage.xaml.cs">
       <DependentUpon>UserPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="MainPage.xaml">
+    <EmbeddedResource Include="Comercializadora.Vista\MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="App.xaml">
+    <EmbeddedResource Include="Comercializadora.Vista\App.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -107,35 +107,36 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ComprarSemillas.xaml">
+    <EmbeddedResource Include="Comercializadora.ModeloVista\ComprarSemillas.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ComprarGomitass.xaml">
+    <EmbeddedResource Include="Comercializadora.ModeloVista\ComprarGomitass.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ComprarPaletas.xaml">
+    <EmbeddedResource Include="Comercializadora.ModeloVista\ComprarPaletas.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CompraChocolates.xaml">
+    <EmbeddedResource Include="Comercializadora.ModeloVista\CompraChocolates.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="UserPage.xaml">
+    <EmbeddedResource Include="Comercializadora.Vista\UserPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

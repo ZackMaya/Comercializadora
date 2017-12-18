@@ -14,11 +14,41 @@ namespace AppCom
 {
     public partial class MainPage : ContentPage
     {
-         public MainPage()
+        public MainPage()
         {
             InitializeComponent();
-         
+  
         }
+        /*
+        int count = 0;
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            btnSumar.Clicked += BtnSumar_Clicked;
+
+        }
+
+        private void BtnSumar_Clicked(object sender, EventArgs e)
+        {
+            count++;
+            btnSumar.Text = count.ToString();
+        }
+        */
+        /*
+        private void BtnSave_Clicked(object sender, EventArgs e)
+        {
+            var nombre = boxName.Text;
+            if (!string.IsNullOrEmpty(nombre))
+            {
+                //2DisplayAlert("Xamarin Forms", nombre, "Aceptar");
+
+
+                var user = new UserModel { Name = nombre };
+                this.Navigation.PushModalAsync(new UserPage(user));
+            }
+        }
+        */
         private void BtnVerChocolates_Clicked(object sender, EventArgs e)
         {
             this.Navigation.PushModalAsync(new CompraChocolates());
@@ -35,7 +65,5 @@ namespace AppCom
         {
             this.Navigation.PushModalAsync(new ComprarSemillas());
         }
-
     }
 }
-
