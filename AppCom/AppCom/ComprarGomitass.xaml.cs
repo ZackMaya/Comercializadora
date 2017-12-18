@@ -33,7 +33,7 @@ namespace AppCom
             try
             {
                 var cliente = new HttpClient();
-                await this.DisplayAlert("ClienteHTTP", "Si llega a la peticion", "Acepar");
+                //await this.DisplayAlert("ClienteHTTP", "Si llega a la peticion", "Acepar");
                 //cliente.DefaultRequestHeaders.Add("id","descripcion");
                 cliente.BaseAddress = new Uri("http://gomitas.herokuapp.com/api/");
                 // await this.DisplayAlert("URL", "Si llega a la URI", "Aceptar");
@@ -43,14 +43,9 @@ namespace AppCom
                 if (resp.IsSuccessStatusCode)
                 {
                     var respStr = await resp.Content.ReadAsStringAsync();
-                   // await this.DisplayAlert("URL", respStr, "Aceptar");
+                    await this.DisplayAlert("URL", respStr, "Aceptar");
                     //hasta aqui la peticion es xida
                     var l = JsonConvert.DeserializeObject<Producto>(respStr);
-                    // await DisplayAlert("lista", "deserializo l", "aceptar");
-                    /* JObject valores = JObject.Parse(respStr);
-                     arregloDatos = (JArray)valores["productos"];
-                     await this.DisplayAlert("Arreglo", "despues de arreglo", "Acepar");
-                     //lista.ItemsSource = arregloDatos;*/
 
                     JObject valores = JObject.Parse(respStr);
                     arregloDatos = (JArray)valores["productos"];
@@ -66,7 +61,6 @@ namespace AppCom
                             imagen = arregloDatos[i]["imagen"].ToString(),
                              piezas = Convert.ToInt32(arregloDatos[i]["piezas"].ToString()),
                              descripcion = arregloDatos[i]["descripcion"].ToString()
-
                         };
                         arregloProductos.Add(tmp);
 

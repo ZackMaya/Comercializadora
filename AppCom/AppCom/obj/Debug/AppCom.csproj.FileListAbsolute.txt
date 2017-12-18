@@ -29,5 +29,6 @@ C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\bin\De
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\obj\Debug\AppCom.dll
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\obj\Debug\AppCom.pdb
+C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\obj\Debug\AppCom.csprojResolveAssemblyReference.cache
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\obj\Debug\AppCom.dll.mdb
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\bin\Debug\AppCom.dll.mdb

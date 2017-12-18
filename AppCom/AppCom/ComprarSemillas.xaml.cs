@@ -29,7 +29,7 @@ namespace AppCom
         }
 
    
-            
+           
     private async void cargarJSONasincrono()
         {
             try
@@ -45,7 +45,7 @@ namespace AppCom
                 if (resp.IsSuccessStatusCode)
                 {
                     var respStr = await resp.Content.ReadAsStringAsync();
-                    //await this.DisplayAlert("URL", respStr, "Aceptar");
+                    await this.DisplayAlert("URL", respStr, "Aceptar");
                     //hasta aqui la peticion es xida
                     var l = JsonConvert.DeserializeObject<Producto>(respStr);
                     // await DisplayAlert("lista", "deserializo l", "aceptar");
@@ -67,9 +67,7 @@ namespace AppCom
                             nombre = arregloDatos[i]["nombre"].ToString(),
                             descripcion = arregloDatos[i]["descripcion"].ToString(),
                             url = arregloDatos[i]["url"].ToString(),
-                            piezas = Convert.ToInt32(arregloDatos[i]["piezas"].ToString()),
-
-
+                            piezas = Convert.ToInt32(arregloDatos[i]["piezas"].ToString())
                         };
                         arregloProductos.Add(tmp);
                     }

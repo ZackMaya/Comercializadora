@@ -14,8 +14,8 @@ namespace AppCom
             InitializeComponent();
 
 
-             MainPage = new NavigationPage(new AppCom.ComprarSemillas());
-            // MainPage = new NavigationPage(new AppCom.ComprarGomitass());
+           //  MainPage = new NavigationPage(new AppCom.ComprarSemillas());
+             MainPage = new NavigationPage(new AppCom.ComprarGomitass());
             // MainPage = new NavigationPage(new AppCom.ComprarPaletas());
             // MainPage = new NavigationPage(new AppCom.CompraChocolates());
 

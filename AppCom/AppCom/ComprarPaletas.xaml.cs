@@ -46,12 +46,7 @@ namespace AppCom
                     await this.DisplayAlert("URL", respStr, "Aceptar");
                     //hasta aqui la peticion es xida
                     var l = JsonConvert.DeserializeObject<Producto>(respStr);
-                    // await DisplayAlert("lista", "deserializo l", "aceptar");
-                    /* JObject valores = JObject.Parse(respStr);
-                     arregloDatos = (JArray)valores["productos"];
-                     await this.DisplayAlert("Arreglo", "despues de arreglo", "Acepar");
-                     //lista.ItemsSource = arregloDatos;*/
-
+                 
 
                     JObject valores = JObject.Parse(respStr);
                     arregloDatos = (JArray)valores["productos"];
