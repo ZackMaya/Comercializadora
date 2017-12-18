@@ -30,3 +30,5 @@ C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\obj\De
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\obj\Debug\AppCom.ComprarPaletas.xaml.g.cs
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\obj\Debug\AppCom.dll.mdb
 C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\bin\Debug\AppCom.dll.mdb
+C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\obj\Debug\AppCom.dll.mdb
+C:\Users\netoz\documents\visual studio 2015\Projects\AppCom\AppCom\AppCom\bin\Debug\AppCom.dll.mdb

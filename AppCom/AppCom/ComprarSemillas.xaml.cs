@@ -65,8 +65,8 @@ namespace AppCom
                         {
                             nombre = arregloDatos[i]["nombre"].ToString(),
                             descripcion = arregloDatos[i]["descripcion"].ToString(),
-                            url = arregloDatos[i]["imagen"].ToString()
-                          //  piezas = Convert.ToInt32(arregloDatos[i]["piezas"].ToString()),
+                            url = arregloDatos[i]["url"].ToString(),
+                            piezas = Convert.ToInt32(arregloDatos[i]["piezas"].ToString()),
 
 
                         };

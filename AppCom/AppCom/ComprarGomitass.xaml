@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppCom.ComprarGomitass"
-             Title="ComprarGomitass">
+             Title="Compra Gomitass">
     <ContentPage.Content>
 
 
@@ -14,9 +14,9 @@
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Orientation="Vertical">
-                                <Label Text="{Binding nombre}" TextColor="#000" FontSize="18" LineBreakMode="TailTruncation" FontAttributes="Bold" />
+                                <Label Text="{Binding nombre}" TextColor="#000" FontSize="20" LineBreakMode="TailTruncation" FontAttributes="Bold" />
                               <Image Aspect="AspectFill" HorizontalOptions="FillAndExpand" Source="{Binding imagen}" WidthRequest="100" HeightRequest="200"/>
-                                <Label Text="{Binding piezas}" TextColor="#000" FontSize="20" LineBreakMode="TailTruncation" FontAttributes="Bold" />
+                                <Label Text="{Binding piezas}" TextColor="#000" FontSize="18" LineBreakMode="TailTruncation" FontAttributes="Bold" />
                                 <Label Text="{Binding descripcion}" TextColor="#000" LineBreakMode="HeadTruncation" HorizontalOptions="EndAndExpand"/>
                             </StackLayout>
                         </ViewCell>

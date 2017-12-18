@@ -35,7 +35,7 @@ namespace AppCom
                 var cliente = new HttpClient();
                 //await this.DisplayAlert("ClienteHTTP", "Si llega a la peticion", "Acepar");
                 //cliente.DefaultRequestHeaders.Add("id","descripcion");
-                cliente.BaseAddress = new Uri("https://semillas-luis.herokuapp.com/api/");
+                cliente.BaseAddress = new Uri("https://api-paletas.herokuapp.com/api/");
                 // await this.DisplayAlert("URL", "Si llega a la URI", "Aceptar");
                 String url = string.Format("getproductos");
                 var resp = await cliente.GetAsync(url);
@@ -66,9 +66,7 @@ namespace AppCom
                             nombre = arregloDatos[i]["nombre"].ToString(),
                             descripcion = arregloDatos[i]["descripcion"].ToString(),
                             cantidad = Convert.ToInt32(arregloDatos[i]["cantidad"].ToString()),
-                            //foto = arregloDatos[i]["foto"].ToString()
-
-
+                            foto = arregloDatos[i]["foto"].ToString()
                         };
                         arregloProductos.Add(tmp);
                     }
