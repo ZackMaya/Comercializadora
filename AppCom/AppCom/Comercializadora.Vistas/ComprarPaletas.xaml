@@ -13,7 +13,7 @@
                     <Image Source="icon.png" WidthRequest="30" HeightRequest="30"></Image>
                     <Label Text="Catalogo de Paletas" FontSize="30"/>
                 </StackLayout>
-                <Image Source="paletas.jpg" WidthRequest="500" HeightRequest="150"></Image>
+                <Image Source="paletas.jpg" WidthRequest="100" HeightRequest="150"></Image>
 
             <Entry x:Name="boxId" Placeholder="Ingresa el id del producto a comprar" HorizontalOptions="StartAndExpand"/>
             <Entry x:Name="boxCantidad" Placeholder="Ingresa la cantidad de piezas a comprar" HorizontalOptions="StartAndExpand"/>
@@ -30,7 +30,7 @@
                                 <Label Text="{Binding descripcion}" TextColor="#000" LineBreakMode="HeadTruncation" HorizontalOptions="EndAndExpand"/>
                                 <Label Text="{Binding cantidad}" TextColor="#000" FontSize="18" LineBreakMode="TailTruncation" FontAttributes="Bold" />
 
-                                <Image Aspect="AspectFill" HorizontalOptions="FillAndExpand" Source="{Binding foto}" WidthRequest="200" HeightRequest="250"/>
+                                <Image Aspect="AspectFill" HorizontalOptions="FillAndExpand" Source="{Binding foto}" WidthRequest="500" HeightRequest="500"/>
                         </StackLayout>
                         </ViewCell>
                     </DataTemplate>

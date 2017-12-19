@@ -20,12 +20,12 @@ namespace AppCom
     public partial class ComprarSemillas : ContentPage
     {
         JArray arregloDatos = new JArray();
-
         public ComprarSemillas()
         {
             InitializeComponent();
             //BindingContext = new ContentPageViewModel();
             getComercializadora();
+
         }
 
         private void BtnBuy_Clicked(object sender, EventArgs e)
@@ -42,6 +42,7 @@ namespace AppCom
                     if (pc <= Convert.ToInt32(arregloDatos[i]["piezas"].ToString()))
                     {
                         //realizar el put
+                      //  putComercializadora(cantidad);
                     }
                     else
                     {
@@ -111,28 +112,51 @@ namespace AppCom
         }
     }
 
-     /*   public async Task putComercializadora(Producto produto)
+   /* public async Task putComercializadora(int cantidad)
+    {
+        try
         {
-            try
-            {
-                var cliente = new HttpClient();
-                //await this.DisplayAlert("ClienteHTTP", "Si llega a la peticion", "Acepar");
-                cliente.BaseAddress = new Uri("https://semillas-luis.herokuapp.com/api/");
-                // await this.DisplayAlert("URL", "Si llega a la URI", "Aceptar");
-                String url = string.Format("actualizarProducto");
-                var resp = await cliente.PutAsync(url);
+            JArray arregloDatos2 = new JArray();
 
-                if (resp.IsSuccessStatusCode)
+            var cliente = new HttpClient();
+            //await this.DisplayAlert("ClienteHTTP", "Si llega a la peticion", "Acepar");
+            cliente.BaseAddress = new Uri("https://semillas-luis.herokuapp.com/api/");
+            // await this.DisplayAlert("URL", "Si llega a la URI", "Aceptar");
+            String url = string.Format("actualizarProducto");
+            var resp = await cliente.PutAsync(url);
+            var respStr2 = await resp.Content.ReadAsStringAsync();
+            var l = JsonConvert.DeserializeObject<Producto>(respStr2);
+
+
+
+            JObject valores = JObject.Parse(respStr2);
+            arregloDatos2 = (JArray)valores["productos"];
+
+            var arregloProductos = new List<Producto>();
+
+            if (resp.IsSuccessStatusCode)
             {
-                  
+
+                for (var i = 0; i < arregloDatos2.Count; i++)
+                {
+                    Producto tmp2 = new Producto()
+                    {
+                        cantidad = Convert.ToInt32(arregloDatos2[i]["cantidad"])
+                    };
+                    arregloProductos.Add(tmp2);
+                    await this.DisplayAlert("Se actualizaron las cantidades: ", "cantidad", "Aceptar");
                 }
 
-        }
-            catch (Exception ex)
-            {
-                await this.DisplayAlert("Tienes una excepción en: ", ex.Message, "Aceptar");
+
             }
-        }*/
+
+        }
+        catch (Exception ex)
+        {
+            await this.DisplayAlert("Tienes una excepción en: ", ex.Message, "Aceptar");
+        }
+    }*/
+
 
     class ComprarSemillasViewModel : INotifyPropertyChanged
     {
